@@ -71,12 +71,12 @@ class MapViewController: UIViewController {
 		
 		// Add target to locationButton
 		locationButton.addTarget(self, action:
-			#selector(MapViewController.locationTapped(_:)),
+			#selector(MapViewController.locationButtonTapped(_:)),
 								 for: .touchUpInside)
 	}
 	
 	// Method which gets called each time button tapped
-	@objc func locationTapped(_ sender: UIButton) {
-		print("location Tapped :)")
+	@objc func locationButtonTapped(_ sender: UIButton) {
+		print("location button tapped :)")
 	}
 }
